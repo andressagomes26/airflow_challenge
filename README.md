@@ -35,4 +35,5 @@ airflow standalone
 - Dags: *./airflow-data/dags/example_desafio.py*
 - Banco de dados: *./airlow-data/data/Northwind_small.sqlite*
 - Arquivo final: *./airlow-data/data/output_orders.csv*
+- Arquivo contagem da quantidade vendida: *count.txt*
 - Arquivo gerado automaticamente pela task (final_output): *final_output.txt*

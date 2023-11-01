@@ -59,7 +59,7 @@ def reads_data_table_orderDetail():
 
     soma = str(df1['Quantity'].sum())
 
-    with open("/home/andressa/andressa/lh/airflow_challenge/data/count.txt","w") as arq:
+    with open("count.txt","w") as arq:
         arq.write(soma)
 
     conn.close
