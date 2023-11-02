@@ -6,6 +6,15 @@ Neste repositório está sendo desenvolvido o desafio módulo 5 referente ao con
 
 Para utilizar este projeto deve-se clonar o repositório do github e executar os comando dentro da pasta do projeto. 
 
+Criar o ambiente virtual
+```bash
+pip install virtualenv
+```
+
+```bash
+virtualenv venv -p python3
+```
+
 Ativar o ambiente virtual
 ```bash
 source venv/bin/activate
