@@ -1,6 +1,7 @@
-# Tutorial Airflow | Desafio Módulo 5
+# <h1 align="center"><font color = #119fbf>Tutorial Airflow | Desafio Módulo 5</font></h1>
+Neste repositório está sendo desenvolvido o desafio módulo 5 referente ao conteúdo "Orquestração com Airflow". 
 
-Neste repositório está sendo desenvolvido o desafio módulo 5 referente ao conteúdo "Orquestração ocm Airflow". 
+<div align="center"><img src='https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png' style='width: 50%;'></div>
 
 ## Instruções
 
@@ -28,6 +29,14 @@ pip install -r requiremenst.txt
 Configurar o ambiente de acordo com o local dos arquivos de config do airflow
 ```bash
 export AIRFLOW_HOME=./airflow-data
+```
+
+Se necessário realizar a instalação do airflow
+```bash
+AIRFLOW_VERSION=2.6.0
+PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)"
+CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
+pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
 ```
 
 Resetar o db do airflow 
